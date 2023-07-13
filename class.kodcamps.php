@@ -195,6 +195,12 @@ echo $out;
                 </div>
             </div>
         </div>
+        <script>
+
+            window.onload = function () {
+                codeEditor("53");
+            };
+        </script>
             <?php
     }
     static function show_xlab_form($atts) {
