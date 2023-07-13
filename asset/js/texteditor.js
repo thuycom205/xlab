@@ -1,7 +1,7 @@
 const JAVA_KEY = "62";
 const CPP_KEY = "53";
 const PYTHON_KEY = "70";
-const BASE_URL = "http://3.84.154.32/submissions";
+const BASE_URL = "https://xlabsession.com/submissions";
 
 
 function codeEditor(lang_id) {
