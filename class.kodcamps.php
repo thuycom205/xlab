@@ -15,8 +15,17 @@ class Kodecamps {
 		self::$initiated = true;
 		add_shortcode('xlab', 'Kodecamps::show_xlab_form');
 		add_action( 'wp_enqueue_scripts','Kodecamps::enqueue_scripts'  );
+
+		add_action( 'wp_head', 'Kodecamps::insecure_header_metadata' );
+
 	}
 
+    static function insecure_header_metadata() {
+        ?>
+	    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <?php
+
+    }
 	static function enqueue_scripts() {
 		wp_enqueue_script('ace', KODECAMPS_URL. '/asset/js/ace.js' ,  array( 'jquery' ), '1.0.0');
 		wp_enqueue_script('texteditor', KODECAMPS_URL. '/asset/js/texteditor.js' ,  array( 'jquery' ), '1.0.0');
