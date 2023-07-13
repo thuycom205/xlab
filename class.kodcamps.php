@@ -171,7 +171,7 @@ echo $out;
                 overflow: hidden;
             }
 
-            #editor {
+            #aws_editor {
                 min-width: 500px;
                 min-height: 500px;
             }
