@@ -1,7 +1,4 @@
-const JAVA_KEY = "62";
-const CPP_KEY = "53";
-const PYTHON_KEY = "70";
-const BASE_URL = "http://3.84.154.32/submissions";
+
 
 
 function codeEditor(lang_id) {
@@ -59,28 +56,7 @@ function codeEditor(lang_id) {
             });
         });
     });
-    if(lang_id==PYTHON_KEY)
-        editor.setValue("def execute(): \n\t for i in range(10):\n\t\t print i \nexecute()")
-    //java
-    if(lang_id==JAVA_KEY){
 
-        let javacode = `public class Main{
-  public static void main(String args[]){
-    System.out.println("hello");
-  }
-}
-`;
-
-        editor.setValue(javacode)
-
-    }if(lang_id==CPP_KEY){
-        let cppcode = `#include <iostream>
-using namespace std;
-  int main() {
-      cout<<"Hello World"; \n
-}`
-        editor.setValue(cppcode)
-    }
 
 
 }
