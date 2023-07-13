@@ -137,7 +137,7 @@ EOF;
 echo $out;
     }
 
-    static function insecure_header_etadata() {
+    static function insecure_header_metadata() {
         ?>
 	    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" data-id="emu" admin-url = "<?php echo admin_url( 'admin-ajax.php' ) ?>" />
         <?php
